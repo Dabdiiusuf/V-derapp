@@ -117,7 +117,7 @@ document.querySelector('.currentTime').innerHTML = currentDate.time.toLocaleTime
 
 
 
-
+// forecast api 
 apiForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=59.3326&lon=18.0649&cnt=5&appid=9bc82d6dbae467b3c6fdb0744a447dcd&units=metric"
 
 fetch(apiForecast)
