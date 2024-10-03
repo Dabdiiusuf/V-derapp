@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inlämningsuppgift</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="weather.html">Weather</a></li>
+        </ul>
+    </nav><br>
+    <hr><br>
+    <article>
+        <div class="grid-container">
+            <div class="container1">
+                <div class="box">
+                    <p class="currentDay"></p>
+                    <h2 class="city"></h2>
+                    <p class="currentTime"></p>
+                </div>
+                <h1 class="temp"></h1>
+
+                <div class="container3"><!--Tredje containern 5 dagars forecast.-->
+                    <div class="container4">
+                        <h4>Lördag</h4>
+                        <p>Temp: 20°C</p> Min: 12°C Max: 21°C
+                        <br>
+                        <br>
+                        <img src="bilder/sunny (kopia).png" style="width: 35px; height: 35px;">
+                    </div>
+                    <div class="container4">
+                        <h4>Söndag</h4>
+                        <p>Temp: 18°C</p> Min: 12°C Max: 20°C
+                        <br>
+                        <br>
+                        <img src="bilder/cloud (kopia).png" style="width: 35px; height: 35px;">
+                    </div>
+                    <div class="container4">
+                        <h4>Måndag</h4>
+                        <p>Temp: 14°C</p> Min: 9°C <br> Max: 18°C
+                        <br>
+                        <br>
+                        <img src="bilder/snow_cloud.png" style="width: 35px; height: 35px;">
+                    </div>
+                    <div class="container4">
+                        <h4>Tisdag</h4>
+                        <p>Temp: 10°C</p> Min: 10°C Max: 16°C
+                        <br>
+                        <br>
+                        <img src="bilder/mostly_sunny.png" style="width: 35px; height: 35px;">
+                    </div>
+                    <div class="container4">
+                        <h4>Onsdag</h4>
+                        <p>Temp: 15°C</p> Min: 12°C Max: 21°C
+                        <br>
+                        <br>
+                        <img src="bilder/lightning.png" style="width: 35px; height: 35px;">
+                    </div>
+                </div>
+
+
+            </div>
+            <!--  
+            <div class="container2">
+                <div class="search">
+                    <input type="text" id="search" placeholder="Enter city name..." spellcheck="true">
+                    <button class="searchIcon"><img src="bilder/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                            style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>-->
+        </div>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Väderprognos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bilder/cloud (kopia).png">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="weather.html">Weather</a></li>
+        </ul>
+    </nav><br>
+    <hr><br>
+    <article>
+        <div class="grid-container">
+
+            <div class="container1"> <!--Första containern med all väder information samt tid och datum.-->
+                <div class="box"> <!--Informationen som är längst upp i första containern-->
+                    <p class="currentDay"></p>
+                    <h2 class="city"></h2> <!--Plats information när man söker på stad etc-->
+                    <p class="currentTime"></p>
+                </div>
+                <div class="autoLocation"> <!--AUTO LOCATION-->
+                    <h1 class="currentLoc"></h1>
+                    <h2 class="currentTemp"></h2>
+                    <img src="" class="weatherIcon"><!--Väderikon när man söker på plats-->
+                </div>
+                <h1 class="temp"></h1> <!--Temperatur när man söker på plats-->
+                <div class="weather"> <!--CSS för att inte vissa väderikon samtidigt som AUTO LOCATION-->
+                </div>
+            </div>
+
+            <div class="container2"><!--Andra containern med sökfunktion.-->
+                <div class="search">
+                    <input type="text" id="search" placeholder="Enter city name..." spellcheck="true">
+                    <button class="searchIcon"><img src="bilder/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                            style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+
+            <div class="container3"><!--Tredje containern 5 dagars forecast.-->
+                <div class="container4"></div>
+                <div class="container4"></div>
+                <div class="container4"></div>
+                <div class="container4"></div>
+                <div class="container4"></div>
+            </div>
+        </div>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
