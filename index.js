@@ -114,30 +114,3 @@ let dayOfWeek = weekDay[day.getDay()];
 document.querySelector('.currentDay').innerHTML = dayOfWeek;
 document.querySelector('.currentTime').innerHTML = currentDate.time.toLocaleTimeString();
 /* Tid och datum*/
-
-
-
-// forecast api 
-apiForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=59.3326&lon=18.0649&cnt=5&appid=9bc82d6dbae467b3c6fdb0744a447dcd&units=metric"
-
-fetch(apiForecast)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
-
-
-
-
-
-
-/* 
-async function forecastWeather(forecast) {
-    const resp = fetch(forecastApi);
-    var forecastData = await resp.json();
-
-    console.log(forecastData);
-
-    document.querySelectorAll('.container4').innerHTML = forecastData.daily.temperature_2m_max;
-}
-console.log(forecastApi);
-*/
